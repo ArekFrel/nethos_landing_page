@@ -1,4 +1,5 @@
 import "../App.css";
+import { ClientSlider } from "./slider";
 
 export function SectionHeader() {
   return (
@@ -161,13 +162,6 @@ function RoundedImage({ pic }) {
   );
 }
 
-function ClientSlider() {
-  return (
-    <div>
-      slider
-    </div>
-  );
-}
 
 export function Clients() {
   return (
