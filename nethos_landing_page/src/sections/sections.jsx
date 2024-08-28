@@ -77,6 +77,7 @@ function ProductBox(args) {
 }
 
 export function SectionWhy() {
+  const arrow = ">>"
   return (
     <section className="section-why">
       <div>

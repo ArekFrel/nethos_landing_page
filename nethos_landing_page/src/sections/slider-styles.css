@@ -1,59 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-button.slider-button{
-    width: 45px;
-    height: 30px;
-    border: none;
-    padding: 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
+:root {
+  --nethos_blue: #009fe3;
+  --nethos_lite_blue: #f7fbfe;
+  --nethos_white: #ffffff;
+  --nethos_grey: #b1b1b3;
+  --nethos_green: #98be13;
 }
 
-.slider-main{
-    align-self: center;
+
+.slider-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slider-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 500px; */
+  height: auto;
+  overflow: hidden;
 }
 
 .slider-pictures {
-    display:flex;
-    justify-content: space-between;
-    column-gap: 100px;
-    width: 400px;
-    height: 200px;    
-    left: 0px;    
+  display: flex;
+  justify-content: space-between;
+  /* column-gap: 100px; */
+  /* width: 400px;
+  height: 200px; */
+  left: 0px;
 }
 
-.slider-area .dot-container {
-    width: 450px;
+.dot-container {
+  width: 500px;
+  height: 20px;
+  margin: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: visible;
+}
+
+.slider-main .dot-container div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button.slider-button {
+    background-color: var(--nethos_grey);
+    cursor: pointer;
+    color: var(--nethos_white);
+    width: 60px;
     height: 20px;
-    margin: 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.dot-bolded {
+  background-color: var(--nethos_blue);
 }
 
-.slider-area .dot-container div {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;  
-}
-
-.slider-area .dot-bolded {
-    background-color: black;
-}
-
-.slider-area .dot-slim {
-    background-color: rgb(166, 166, 166);
+.dot-slim {
+  background-color: var(--nethos_grey);
 }

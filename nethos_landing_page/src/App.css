@@ -70,7 +70,8 @@
 
 .App-hero-background {
   display: flex;
-  background-image: url("./sections/img/dreamstime_xl_65272350_2.jpg");
+  /* background-image: url("./sections/img/dreamstime_xl_65272350_2.jpg"); */
+  background-image: url("./img/office_01.jpg");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -203,7 +204,6 @@ justify-content: center;
 
 .button-container > button {
   cursor: pointer;
-  margin: 10 50px 10px 50px;
   display: inline-block;
   padding: 10px 20px;
   font-size: 1.1em;
@@ -214,8 +214,9 @@ justify-content: center;
   border-radius: 6px;
   text-transform: uppercase;
   background:  var(--nethos_green);
-  transition: all 0.3s ease-in-out;
   text-wrap: nowrap;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .about-us {
